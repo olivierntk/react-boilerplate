@@ -1,0 +1,22 @@
+# Editor/IDE generated files
+*.iml
+.*.swp
+.swp
+.DS_Store
+.idea/
+
+# Node generated artifacts
+node_modules/
+npm-debug.log
+npm-shrinkwrap.json
+
+# Test generated reports
+report.xml
+target/
+coverage/
+
+# Tony's ignorant Eclipse shenanigans
+.settings/
+.project
+
+dist/
