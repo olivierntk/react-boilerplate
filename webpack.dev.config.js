@@ -14,6 +14,10 @@ const config = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'app.bundle.js'
   },
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist'
+  },
   module: {
     rules: [
       {
@@ -26,7 +30,10 @@ const config = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
+          loader: 'babel-loader',
+          options: {
+            presets: ['react']
+          }
         }
       }
     ]

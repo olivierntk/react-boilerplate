@@ -1,12 +1,9 @@
-import _ from 'lodash';
+/* eslint-disable no-unused-vars */
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Main from './Main';
 
-let result = _.lastIndexOf([1, 2, 1, 2], 2);
-
-console.log(result);
-
-console.log('test');
-
-console.log('hello');
-
-console.log('sdfsdfsdf');
-
+ReactDOM.render(
+  <Main></Main>,
+  document.getElementById('root')
+);
